@@ -7,17 +7,17 @@ import pickle
 
 
 def decode(a, d):
-    #    print invdico
     inv_map = {v: k for k, v in d.items()}
     for k,v in inv_map.items():
         if 'TYPL' in v:
             inv_map[k] = v.replace('\n', '')
     s = ''
-    #   print list
-    for i in a:
+    l = a.split()
+    # print(l)
+    for i in l:
         if i != ' ' and int(i) in inv_map.keys():
             s = s + inv_map[int(i)] + ' '
-    print(s)
+    # print(s)
     return s
 
 
@@ -40,7 +40,6 @@ else:
         r = l.split("#")
         #   print r
         aa = r[0].split(' ==> ')
-        print(aa)
         if len(aa) == 1:
             rdec = decode(aa[0], d)
             res.write(rdec + '# ' + '# '.join(r[1:]) + '\n')
