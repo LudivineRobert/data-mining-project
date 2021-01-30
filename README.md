@@ -22,7 +22,7 @@ Vous aurez également besoin du fichier de données GrandEst au format .txt et d
 
 Pour encoder le fichier de données, lancer la commande suivante:
 ```bash
-python encode\_GrandEst.py -f _GrandEst.txt_ 
+python encode_GrandEst.py -f _GrandEst.txt_ 
 ```
 
 Le fichier encodé _GrandEst_encode.txt_ sera généré ainsi que le dictionnaire comprenant l'encodage _dictionnaire.pickle_.
