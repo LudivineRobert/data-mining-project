@@ -46,14 +46,13 @@ def encode_file(name_file):
                 enc = str(header[i]) + '_' + str(j)  # avec le nom de l'attribut et sa valeur
                 if enc not in dict_encode.keys():
                     dict_encode[enc] = indice
-                    indice += 1
                     enc_l.append(indice)
+                    indice += 1
                 else:
                     enc_l.append(dict_encode[enc])
             enc_l.sort()
             values.append(enc_l)
-        print(dict_encode)
-    with open('GrandEst_encode.txt', 'w+') as ff:  # on crée le fichier encodé
+    with open('GrandEst_encode.txt', 'w') as ff:  # on crée le fichier encodé
         for a in values:
             l2 = [str(i) for i in a]
             ff.write(" ".join(l2))

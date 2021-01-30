@@ -11,6 +11,9 @@ java -jar spmf.jar run FPGrowth_itemsets GrandEst_encode.txt output_spmf_item_fp
 # minsup: 25%
 java -jar spmf.jar run FPGrowth_itemsets GrandEst_encode.txt output_spmf_item_fpg_25.txt 0.25
 
+# minsup: 30%
+java -jar spmf.jar run FPGrowth_itemsets GrandEst_encode.txt output_spmf_item_fpg_30.txt 0.30
+
 # minsup: 40%
 java -jar spmf.jar run FPGrowth_itemsets GrandEst_encode.txt output_spmf_item_fpg_40.txt 0.40
 
