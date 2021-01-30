@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# #### Libraries 
-
+#### Libraries
+import argparse
 
 import pandas as pd
 import csv
 import pickle
+import sys
 
 
 def encode_file(name_file):
@@ -49,6 +50,7 @@ def encode_file(name_file):
                     enc_l.append(indice)
                 else:
                     enc_l.append(dict_encode[enc])
+            enc_l.sort()
             values.append(enc_l)
         print(dict_encode)
     with open('GrandEst_encode.txt', 'w+') as ff:
@@ -56,7 +58,20 @@ def encode_file(name_file):
             l2 = [str(i) for i in a]
             ff.write(" ".join(l2))
             ff.write("\n")
+    # Enregistrer le dictionnaire d'encodage
+    with open('dictionnaire.pickle', 'wb') as handle:
+        pickle.dump(dict_encode, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 if __name__ == '__main__':
-    encode_file("/media/macaire/Ubuntu/Master_2/Data_Mining_Project/GrandEst.txt")
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', '--fichier', type=str,
+                        help='Fichier en entrée: données GrandEst.txt')
+    args = parser.parse_args()
+    if len(sys.argv) <= 1:
+        print("Vous devez spécifier le fichier de données en entrée.")
+        exit(1)
+    else:
+        encode_file(args.fichier)
+
+
