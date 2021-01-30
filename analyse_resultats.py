@@ -2,7 +2,7 @@
 # coding: utf-8
 
 path = '/media/macaire/Ubuntu/Master_2/Data_Mining_Project/data-mining-project/resultats_decode/AssocationRules/decode_output_asr_sup20_conf20.txt'
-
+#path = '/Users/Ludivine/Documents/Université/Master TAL/Année 2020-2021/Semestre 9/UE901 EC2 Fouille de données/toussaint/Project/data-mining-project/resultats_decode/AssocationRules/decode_output_asr_sup20_conf20.txt'
 
 def resultats_decroissant(file):
     with open(file, 'r') as f:
@@ -25,7 +25,7 @@ def resultats_paritems(file):
         lines = f.readlines()
         for i in lines:
             if i != '\n':
-                if 'MODV' in i: # a modifier en fonction de l'item que vous voulez observer
+                if 'SURF' in i: # a modifier en fonction de l'item que vous voulez observer
                     print(i)
 
 

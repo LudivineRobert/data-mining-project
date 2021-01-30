@@ -2,6 +2,15 @@
 #lignes de commandes pour mining spmf
 
 ## ------------- FPGrowth itemsets
+# minsup: 15%
+java -jar spmf.jar run FPGrowth_itemsets GrandEst_encode.txt output_spmf_item_fpg_15.txt 0.15
+
+# minsup: 20%
+java -jar spmf.jar run FPGrowth_itemsets GrandEst_encode.txt output_spmf_item_fpg_20.txt 0.20
+
+# minsup: 25%
+java -jar spmf.jar run FPGrowth_itemsets GrandEst_encode.txt output_spmf_item_fpg_25.txt 0.25
+
 # minsup: 40%
 java -jar spmf.jar run FPGrowth_itemsets GrandEst_encode.txt output_spmf_item_fpg_40.txt 0.40
 
