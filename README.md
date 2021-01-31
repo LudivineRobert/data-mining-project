@@ -1,6 +1,13 @@
-# Projet: Data Mining sur les données Grand Est
+## UE901 EC2 Data Mining - Practical word
+## Itemset and Association Rules Mining (données : GrandEst)
 
-Ce projet a été réalisé par Ludivine Robert, Asmaa Demny et Cécile Macaire dans le cadre du cours UE901 EC2 de Yannick Toussaint, M2 NLP à l'Université de Lorraine. 
+**Asmaa DEMNY & Cécile MACAIRE & Ludivine ROBERT**
+
+
+## Contexte
+Ce projet a été réalisé dans le cadre d'un cours de fouille de données au programme du Master 2 en Traitement Automatique des Langues à l'Université de Lorraine (Nancy).
+
+Ce répertoire contient tous les fichiers nécessaires au projet. Vous trouverez ci-dessous une description de base, ainsi que les instructions et commandes d'exécution des scripts d'encodage et de décodage.
 
 ## Prérequis
 
@@ -10,7 +17,7 @@ Pour commencer, veuillez cloner le répertoire par la ligne de commande:
 git clone git@github.com:macairececile/data-mining-project.git
 ```
 
-Vous aurez également besoin du fichier de données GrandEst au format .txt et de l'archive spmf.jar pour les différents algorithmes à copier dans le même répertoire. 
+Vous aurez également besoin du fichier de données ```GrandEst``` au format ```.txt``` et de l'archive ```spmf.jar``` pour les différents algorithmes à copier dans le même répertoire. 
 
 #### Librairies nécessaires
 
