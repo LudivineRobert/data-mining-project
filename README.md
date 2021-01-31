@@ -32,8 +32,8 @@ Pour encoder le fichier de données, lancer la commande suivante:
 ```bash
 python encode_SPMF.py -f GrandEst.txt
 ```
-Le fichier _GrandEst_filter.txt_ comprendra les données filtrées, c'est à dire les données provenant des attributs que nous avons fait le choix de garder.
-Le fichier encodé _GrandEst_encode.txt_ sera généré ainsi que le dictionnaire comprenant l'encodage _dictionnaire.pickle_.
+Le fichier ```GrandEst_filter.txt``` comprendra les données filtrées, c'est à dire les données provenant des attributs que nous avons fait le choix de garder.
+Le fichier encodé ```GrandEst_encode.txt``` sera généré ainsi que le dictionnaire comprenant l'encodage ```dictionnaire.pickle```.
 
 ## 2. Mining avec SPMF
 
