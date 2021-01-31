@@ -67,3 +67,5 @@ Veuillez à bien avoir le fichier ```dictionnaire.pickle``` pour que le décodag
 Les fichiers décodés sont déjà disponible dans les dossiers **resultats_decode/Itemset/** et **resultats_decode/AssociationRules/** pour les itemsets fréquents et les règles d'association, respectivement.
 
 ## 4. Analyse des résultats
+
+Enfin, l'étude de certains itemsets et règles d'association se trouve dans le fichier ```DataMining_rapport.pdf```.
