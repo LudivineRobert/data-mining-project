@@ -61,8 +61,8 @@ Afin de décoder les fichiers générés par spmf, lancer la commande suivante:
 python decode_SPMF.py -f res.txt
 ```
 
-Veuillez à bien avoir le fichier _dictionnaire.pickle_ pour que le décodage puisse de réaliser.
-_res.txt_ correspond au fichier à décoder. 
+Veuillez à bien avoir le fichier ```dictionnaire.pickle``` pour que le décodage puisse de réaliser.
+```res.txt``` correspond au fichier à décoder. 
 
 Les fichiers décodés sont déjà disponible dans les dossiers **resultats_decode/Itemset/** et **resultats_decode/AssociationRules/** pour les itemsets fréquents et les règles d'association, respectivement.
 
