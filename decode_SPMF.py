@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-# Usage : python decode_SPMF.py file-to-decode
+# Usage : python decode_SPMF.py - f file-to-decode
 import argparse
 import sys
 import pickle
